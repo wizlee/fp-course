@@ -80,6 +80,7 @@ library
                       Course.Scratch
                       Course.State
                       Course.StateT
+                      Course.Syntax
                       Course.Traversable
                       Course.Validation
                       Test.ApplicativeTest
