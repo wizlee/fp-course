@@ -2,7 +2,7 @@
 module Course.Syntax where
 
 import Course.Core
-import Prelude (Double, sqrt)
+import Prelude (Double)
 
 -- Write a constant approximating Pi
 pi :: Double
