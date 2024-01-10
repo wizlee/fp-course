@@ -35,3 +35,16 @@ area' :: Shape' -> Double
 area' (Circle' r) = 2 * pi' * r
 area' (Rectangle' w h) = w * h
 area' (Triangle' w h) = w * h / 2
+
+-- Josh comment about the above:
+-- The second is the more idiomatic version. 
+-- In the first case, you would probably end up implementing area with a typeclass (covered in today's session), rather than pattern matching on a type.
+-- Neither is inherently wrong though. There are definitely reasons you'd end up doing the first version in more complex programs
+-- example of implementing area with a typeclass:
+class Area a where
+  area'' :: a -> Double
+instance Area Shape' where
+  area'' (Circle' r) = 2 * pi' * r
+  area'' (Rectangle' w h) = w * h
+  area'' (Triangle' w h) = w * h / 2
+  
